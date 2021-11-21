@@ -11,3 +11,7 @@ _start:
   mov rsi, hello
   mov rdx, 14
   syscall
+
+  mov rax, 60
+  mov rdi, 0
+  syscall
