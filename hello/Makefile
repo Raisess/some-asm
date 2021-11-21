@@ -1,11 +1,18 @@
 CC=nasm
+FLAGS=-f elf64
 
 FILES=./hello.asm
 
-OUTPUT=build
+OUTPUT=./hello.o
+BUILD=./hello
+
+O_FILES=$(OUTPUT) \
+				$(BUILD)
 
 build:
-	$(CC) $(FILES) -o $(OUTPUT)
+	$(CC) $(FLAGS) $(FILES) -o $(OUTPUT)
+	ld -o $(BUILD) $(OUTPUT)
+	chmod +x $(BUILD)
 
 clean:
-	rm ./$(OUTPUT)
+	rm $(O_FILES)
