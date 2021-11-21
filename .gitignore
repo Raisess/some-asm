@@ -1,2 +1,5 @@
 hello/hello
 hello/hello.o
+
+print_rax/print_rax
+print_rax/print_rax.o
