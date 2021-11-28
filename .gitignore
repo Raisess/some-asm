@@ -3,3 +3,6 @@ hello/hello.o
 
 print_rax/print_rax
 print_rax/print_rax.o
+
+routine/routine
+routine/routine.o
